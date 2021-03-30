@@ -54,13 +54,14 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
+                    <linkXRef>false</linkXRef>
                 </configuration>
                 <executions>
                     <execution>
                         <id>checkstyle</id>
                         <phase>verify</phase>
                         <goals>
-                            <goal>checkstyle</goal>
+                            <goal>check</goal>
                         </goals>
                     </execution>
                 </executions>
